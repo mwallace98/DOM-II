@@ -40,5 +40,44 @@ document.body.addEventListener('click', (event) =>{
 
 // event 6
 
+document.body.addEventListener('dblclick', (event) => {
+    event.target.outerHTML = "";
+})
+
+// event 7
+
+
+
+document.body.addEventListener("mouseover" ,() => {
+    document.body.style.backgroundColor = "red"
+})  
+
+
+
+//event 8
+
+document.body.addEventListener("mouseleave", () =>{
+    document.body.style.backgroundColor = "white"
+})
+
+//event 9
+
+document.body.addEventListener("mousemove", (event) => {
+    const {clientX, clientY } = event;
+    // console.log(`The mouse is at ${clientX} and ${clientY}`);
+})
+
+
+//event 10
+
+const destinations = document.querySelectorAll(".destination")
+    for(let destination of destinations){
+        destination.addEventListener("mouseenter", (event) => {
+            console.log(destinations)
+        })
+    }
+
+
+
 
 
